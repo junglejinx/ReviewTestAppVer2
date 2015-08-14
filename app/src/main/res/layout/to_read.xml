@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/toReadRelativeLayout"
+    tools:context="com.learning.suman.reviewtestappver2.ToRead"
+    android:background="#ff08bdff"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:id="@+id/homeButton"
+        android:layout_alignParentTop="true"
+        android:textSize="10dp"
+        android:onClick="homescreenButtonClick"
+        android:background="@drawable/custom_button"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read books"
+        android:id="@+id/readButton"
+        android:textSize="10dp"
+        android:onClick="readBooks"
+        android:background="@drawable/custom_button"
+        android:layout_toRightOf="@+id/homeButton"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wish List"
+        android:id="@+id/homeScreenWishListButton"
+        android:textSize="10dp"
+        android:onClick="showBooksList"
+        android:background="@drawable/custom_button"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/readButton"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Language"
+        android:id="@+id/languageTextView"
+        android:layout_below="@+id/homeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Book Name"
+        android:id="@+id/booknameTextView"
+        android:layout_below="@+id/languageTextView"
+        android:layout_alignRight="@+id/languageTextView"
+        android:layout_alignEnd="@+id/languageTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeScreenBookNameEditText"
+        android:width="200dp"
+        android:layout_alignBottom="@+id/booknameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Author"
+        android:id="@+id/authorTextView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeScreenAuthorEditText"
+        android:width="200dp"
+        android:layout_alignTop="@+id/authorTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeScreenLanguageEditText"
+        android:layout_above="@+id/booknameTextView"
+        android:layout_alignLeft="@+id/homeScreenAuthorEditText"
+        android:layout_alignStart="@+id/homeScreenAuthorEditText"
+        android:layout_alignRight="@+id/homeScreenAuthorEditText"
+        android:layout_alignEnd="@+id/homeScreenAuthorEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="genre"
+        android:id="@+id/genreTextView"
+        android:layout_below="@+id/homeScreenAuthorEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeScreenGenreEditText"
+        android:layout_alignTop="@+id/genreTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/homeScreenAuthorEditText"
+        android:layout_alignStart="@+id/homeScreenAuthorEditText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD TO LIST"
+        android:id="@+id/addToListButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="addToList"
+        android:textSize="10dp"
+        android:background="@drawable/custom_action_button"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
