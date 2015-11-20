@@ -55,7 +55,7 @@ public class WishList extends ActionBarActivity {
                 //String sortBy=String.valueOf(parent.getItemAtPosition(position));
                 String sortBy = sortSpinner.getSelectedItem().toString();
                 //Toast.makeText(getApplicationContext(), "option selected: " + sortBy, Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(), "position by intent: " + sortOptionPosition, Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "position by intent: " + sortOptionPosition, Toast.LENGTH_LONG).show();
 
                 if (sortOptionPosition!=0){
                     sortSpinner.setSelection(sortOptionPosition);
@@ -108,7 +108,7 @@ public class WishList extends ActionBarActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         String bookSelected = String.valueOf(parent.getItemAtPosition(position));
-                        Toast.makeText(getApplicationContext(), "position selected: "+sortOptionPosition, Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(), "position selected: "+sortOptionPosition, Toast.LENGTH_LONG).show();
                         view.setBackgroundColor(006600);
                         Intent i = new Intent(getApplicationContext(), EditDeleteBackListDisplay.class);
                         i.putExtra("bookName", bookSelected);
@@ -191,7 +191,7 @@ public class WishList extends ActionBarActivity {
     public void printDatabase(){
         //TextView displayTextView =(TextView)findViewById(R.id.wishListDisplayTextView);
         String dbString=displayDataHandler.databaseToString();
-        Toast.makeText(this,dbString,Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,dbString,Toast.LENGTH_LONG).show();
         //displayTextView.setText(dbString);
 
 

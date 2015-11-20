@@ -20,6 +20,7 @@ import java.util.List;
 
 public class ReadBooks extends ActionBarActivity {
 
+    //declaring the variables
     ReadBooksDBHandler displayDataHandler;
     Spinner readBooksSortSpinner;
     int flag=0;
@@ -49,7 +50,7 @@ public class ReadBooks extends ActionBarActivity {
                 //String sortBy=String.valueOf(parent.getItemAtPosition(position));
                 String sortBy = readBooksSortSpinner.getSelectedItem().toString();
                 //Toast.makeText(getApplicationContext(), "option selected: " + sortBy, Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(), "position selected: " + position, Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "position selected: " + position, Toast.LENGTH_LONG).show();
                 /*if (sortOptionPosition!=0){
                     sortSpinner.setSelection(sortOptionPosition);
                 }*/

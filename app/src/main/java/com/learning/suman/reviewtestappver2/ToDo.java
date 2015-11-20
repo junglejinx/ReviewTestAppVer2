@@ -20,24 +20,7 @@ import java.util.List;
 public class ToDo {
 
 
-    /* helpful links:
-        To add ext library/jar files as in this case adding ACHartEngine 1.1.0 ---> https://www.youtube.com/watch?v=tfPgx6c5wgA
-        other queries---> www.stackoverflow.com
-     */
 
-    //work with " genre/language/rating" spinners/stars in "mainactivity/toread" activity
-    //fix the ReadBooks activity--->urgent dbSelected(dbstring)
-    //fix the bug when the app runs for the first time without any datain db-->imp
-    //replace all ==null to .isempty() in the if statements
-    //work on the image of display list items
-    //camera option to take d pic of d book
-    //validation of all input fields
-    //glorify appearance,color,button shape etc
-    //get an app icon
-    //store in app store
-    //user-id/pwd creation...database name changes with each user???
-    //graphic representation of yr vs genre/author vs lang etc--almost
-    //add another button where you store the books you own details??
 
 
     //--------------scratch book--------------------

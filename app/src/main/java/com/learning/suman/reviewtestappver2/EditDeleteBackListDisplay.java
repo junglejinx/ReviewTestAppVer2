@@ -36,7 +36,7 @@ public class EditDeleteBackListDisplay extends ActionBarActivity /*implements Ad
         activityClass=i.getStringExtra("activityClass");
         final String reviewData=i.getStringExtra("reviewData");
         final int pos=i.getIntExtra("sortOptionPosition",3);
-        Toast.makeText(this,bookSelected,Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,bookSelected,Toast.LENGTH_LONG).show();
 
         int j=0;
         /*while(bookSelected.charAt(j) != ' ') {
@@ -82,14 +82,14 @@ public class EditDeleteBackListDisplay extends ActionBarActivity /*implements Ad
 
                     if (activityClass.equals("WishList")){
 
-                        Toast.makeText(getApplication(),"wishlist-----"+activityClass,Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplication(),"wishlist-----"+activityClass,Toast.LENGTH_LONG).show();
                         Intent wishListIntent=new Intent(getApplicationContext(),WishList.class);
                         wishListIntent.putExtra("sortOptionPosition",pos);
                         startActivity(wishListIntent);
                     }
                     else if(activityClass.equals("ReadBooks")) {
 
-                        Toast.makeText(getApplication(),"ReadBooks---"+activityClass,Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplication(),"ReadBooks---"+activityClass,Toast.LENGTH_LONG).show();
                         Intent readBooksIntent = new Intent(getApplicationContext(), ReadBooks.class);
                         startActivity(readBooksIntent);
 

@@ -197,7 +197,7 @@ public class ShowGraph extends ActionBarActivity {
            k=k+2;
        }
 
-       Toast.makeText(this,xValues[0].toString(),Toast.LENGTH_LONG).show();
+       //Toast.makeText(this,xValues[0].toString(),Toast.LENGTH_LONG).show();
 
 
        //Add the values to the Linegrapgh dataseries
